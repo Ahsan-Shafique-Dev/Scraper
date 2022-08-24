@@ -133,20 +133,14 @@ public class Scraper<Jsonreader> {
         }
         return null;
     }
+
     public int addRecord(LondonStockExchange londonStockExchange)
     {
         return scraperRepository.addRecord(londonStockExchange);
     }
+
     public ArrayList<LondonStockExchange> getAllRecord()
     {
         return scraperRepository.getAllRecord();
     }
-
-//    public ArrayList<LondonStockExchange> getAllRecord() {
-//        return repo.getAllRecord();
-//    }
-//
-//    public <scrapedData> int addRecord(scrapedData data) {
-//        return repo.addRecord((LondonStockExchange) data);
-//    }
 }
